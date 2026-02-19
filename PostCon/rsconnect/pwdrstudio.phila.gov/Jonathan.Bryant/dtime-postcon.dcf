@@ -5,8 +5,8 @@ account: Jonathan.Bryant
 server: pwdrstudio.phila.gov
 hostUrl: https://pwdrstudio.phila.gov/__api__
 appId: 512
-bundleId: 3283
-url: https://pwdrstudio.phila.gov/content/73e98831-8878-42a2-b42e-2adb18234886/
+bundleId: 3946
+url: https://pwdrstudio.phila.gov/mars/post-con-status/
 version: 1
 asMultiple: FALSE
 asStatic: FALSE
