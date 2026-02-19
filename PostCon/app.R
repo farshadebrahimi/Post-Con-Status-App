@@ -1353,7 +1353,7 @@
     # 
     ### Matching SRT deployments with SRT table records to ensure they match (full join between srt and deployment table)
     rv$srt_qa <- reactive(deployment_all %>%
-                            filter(deployment_dtime <= rv$qa_end_date() & deployment_dtime > rv$qa_start_date()) %>%                   
+                            filter(deployment_dtime <= rv$qa_end_date() & deployment_dtime >= rv$qa_start_date()) %>%                   
                             filter(term == "SRT") %>%
                             full_join(rv$srt(), by = c("deployment_dtime" = "test_date", "system_id")) %>%
                             filter(is.na(srt_uid) | is.na(deployment_uid)) %>%
@@ -1430,8 +1430,6 @@
                 theme = darkly(),)
     )
     
-    
-
   }
   
   # Complete app with UI and server components
